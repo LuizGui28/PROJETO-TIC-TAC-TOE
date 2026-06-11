@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  background-color: #24525e;
+  font-family: 'roboto';
+  color: #cfcfcf;
+  text-align: center;
+}
+
+#velha {
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  grid-template-rows: repeat(3, 1fr);    /* 3 linhas iguais */
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  gap: 10px;
+  margin: 30px auto;
+}
+
+label {
+  font-size: 30px;
+  margin-left: 2rem;
+  padding-right: 0.5rem;
+}
+
+input {
+  font-family: 'roboto';
+  color: #ffffff8e;
+  font-size: 30px;
+  width: 300px;
+  height: 40px;
+  
+}
+
+.tictok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff8e;
+  border: 2px solid #ccc;
+  font-size: 5rem;
+  color: #292828;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+
+
+
+
+  /*font-size: 5rem;
+  background-color: rgb(179, 179, 179);
+  cursor: pointer;*/
+}
+
+button:hover {
+  transform: scale(1);
+  border-color: #f3f5ff;
+}
+
+#iniciar {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: #08232e;
+}
+
+#Reiniciar {
+  display: flex;
+  justify-self: flex-end;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #08232e;
+  
+}
+
+#nomes {
+  height: 90px;
+  padding-left: 2rem;
+  align-items:center;
+  font-size: 4rem;
+  user-select: none;
+}
+
+.winner {
+  background-color: #0a0a0a !important; /* Cor verde para indicar vitória */
+  color: white;
+  transition: 0.3s;
+}
+
+.loser {
+  background-color: #af4c4c !important; /* Cor verde para indicar vitória */
+  color: white;
+  transition: 0.3s;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+      <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="form-list">
+
+    <h1>Jogo da Velha</h1>
+
+    <div id="inputs">
+        <label for="playerX" class="label">X </label>
+        <input type="text" id="jogador1" name="numero1" placeholder="Nome jogador 1">
+        <label for="playerO" class="label" >O</label>
+        <input type="text" id="jogador2" name="numero2" placeholder="Nome jogador 2">
+        <button id="iniciar">Começar</button>
+    </div>
+    <br><br>
+
+
+<div id="nomes"></div>
+
+<div id="velha">
+    <button class="tictok" id="cell-0"  data-indice="0"></button>
+    <button class="tictok" id="cell-1"  data-indice="1"></button>
+    <button class="tictok" id="cell-2"  data-indice="2"></button>
+    <button class="tictok" id="cell-3"  data-indice="3"></button>
+    <button class="tictok" id="cell-4"  data-indice="4"></button>
+    <button class="tictok" id="cell-5"  data-indice="5"></button>
+    <button class="tictok" id="cell-6"  data-indice="6"></button>
+    <button class="tictok" id="cell-7"  data-indice="7"></button>
+    <button class="tictok" id="cell-8"  data-indice="8"></button>
+
+</div>
+<br><br>
+
+<button onclick="location.reload()" id="Reiniciar">Reiniciar</button>
+
+ 
+    
+</body>
+</html>
