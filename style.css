@@ -6,12 +6,17 @@
   text-align: center;
 }
 
+html, body { height: 100dvh; margin: 0; overflow: hidden; }
+body { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+br { display: none; }
+
+
 #velha {
   justify-content: center;
   text-align: center;
   display: grid;
-  width: 500px;
-  height: 500px;
+  width: min(500px, calc(100dvh - 240px), calc(100vw - 2rem));
+  height: min(500px, calc(100dvh - 240px), calc(100vw - 2rem));
   grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
   grid-template-rows: repeat(3, 1fr);    /* 3 linhas iguais */
   border: none;
@@ -40,8 +45,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff8e;
   border: 2px solid #ccc;
   font-size: 5rem;
@@ -118,8 +123,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff8e;
   border: 2px solid #ccc;
   font-size: 5rem;
@@ -156,8 +161,8 @@ input {
   justify-content: center;
   text-align: center;
   display: grid;
-  width: 500px;
-  height: 500px;
+   width: min(500px, calc(100dvh - 220px), calc(100vw - 2rem));
+  height: min(500px, calc(100dvh - 220px), calc(100vw - 2rem));
   grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
   grid-template-rows: repeat(3, 1fr);    /* 3 linhas iguais */
   border: none;
@@ -188,8 +193,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 110px;
-  height: 110px;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff8e;
   border: 2px solid #ccc;
   font-size: 5rem;
@@ -210,7 +215,7 @@ input {
 #Reiniciar {
   display: flex;
   justify-content: center;
-  margin-top: 17rem;
+  margin-top: 1rem;
   font-size: 20px;
   cursor: pointer;
   background-color: #08232e;
@@ -228,8 +233,8 @@ input {
   justify-content: center;
   text-align: center;
   display: grid;
-  width: 100px;
-  height: 100px;
+  width: min(360px, calc(100dvh - 220px), calc(100vw - 2rem));
+  height: min(360px, calc(100dvh - 220px), calc(100vw - 2rem));
   grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
   grid-template-rows: repeat(3, 1fr);    /* 3 linhas iguais */
   border: none;
